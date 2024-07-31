@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; 
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #060000; 
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+}
+
+form input, form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+
+form button:active {
+    background-color: #fff;
+    color: #000; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; 
+}
+
+li span {
+    margin-bottom: 5px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+li button.edit {
+    color: #ffc107;
+}
+
+li button.delete {
+    color: #dc3545;
+}
+
+.task-deadline, .task-priority, .task-label {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
